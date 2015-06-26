@@ -1,0 +1,6 @@
+node_modules/
+data/gmail.json
+data/twitter.json
+data/quotes.html
+data/quotes.txt
+python/
