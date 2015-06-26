@@ -1,6 +1,7 @@
 node_modules/
 data/gmail.json
 data/twitter.json
+data/pushbullet.json
 data/quotes.html
 data/quotes.txt
 python/
