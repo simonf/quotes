@@ -11,6 +11,7 @@ if(process.env.NODE_ENV=='test') {
 }
 
 function SendMail(recipient,msg) {
+	log.info("Sending "+msg+" to "+recipient);
 	loadOpts().then(function(svc){
 		var smtpTransport = mail.createTransport(svc);
 		var mailOptions = {
@@ -18,7 +19,7 @@ function SendMail(recipient,msg) {
 			to: recipient,
 			subject: "Quote from Cherub",
 			text: msg,
-			html: "<p>#{msg}</p>"
+			html: '<p>'+msg+'</p>'
 		};
 		smtpTransport.sendMail(mailOptions, function(err,info){
 			if(err) {
