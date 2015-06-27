@@ -1,0 +1,8 @@
+{
+	"access_token": "your token here",
+	"idens": {
+		"ipad": "iden for ipad",
+		"phone": "retrieved by using",
+		"chrome": "new PushBullet(access_token).devices"
+	}
+}

@@ -15,4 +15,5 @@ or
 
 or
 
-`node sendquote.js -p <pushbullet alias>` (see data/bullet.json for an example)
+`node sendquote.js -p <pushbullet alias>` 
+(see data/pushbullet.example for an example)
