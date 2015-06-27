@@ -1,0 +1,7 @@
+{
+  "service": "Gmail", 
+  "auth": { 
+    "user": "myname@gmail.com", 
+    "pass": "mypassword"
+  }
+}
