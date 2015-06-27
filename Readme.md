@@ -12,3 +12,7 @@ or
 or
 
 `node sendquote.js -m some.one@company.com -t twitterhandle`
+
+or
+
+`node sendquote.js -p <pushbullet alias>` (see data/bullet.json for an example)
