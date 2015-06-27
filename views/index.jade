@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title
+	p #{quote}
+	p
+		i #{author}: #{book}
+	form(action="/")
+		input(type="submit" value="Another")
