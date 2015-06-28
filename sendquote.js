@@ -30,7 +30,7 @@ function main() {
 	var argv = require('minimist')(process.argv.slice(2));
 	quote.getRandomQuote().then(function(q) {
 		if(argv.m) {
-				gmail.SendMail(argv.m,quoteToEmail(q));
+				gmail.SendMail(argv.m,q.author,q.quote+'\n'+q.title);
 		}
 		if(argv.t) {
 				tweet.SendDM(argv.t,quoteToDM(q,140));

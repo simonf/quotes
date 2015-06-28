@@ -10,14 +10,14 @@ if(process.env.NODE_ENV=='test') {
 	 module.exports._private = {loadOpts: loadOpts};
 }
 
-function SendMail(recipient,msg) {
+function SendMail(recipient,subject,msg) {
 	log.info("Sending "+msg+" to "+recipient);
 	loadOpts().then(function(svc){
 		var smtpTransport = mail.createTransport(svc);
 		var mailOptions = {
 			from: 'Cherub <cherub@home.simonf.net>',
 			to: recipient,
-			subject: "Quote from Cherub",
+			subject: subject,
 			text: msg,
 			html: '<p>'+msg+'</p>'
 		};
